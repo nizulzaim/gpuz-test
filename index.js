@@ -2,7 +2,6 @@ const gpuz = require('gpu-z')
 const readline = require('readline');
 const chalk = require('chalk')
 const cmd = require('node-cmd');
-const fkill = require('fkill');
 const exitHandler = require('./exit-handler')
 
 let i = 0
@@ -44,6 +43,7 @@ let proc = cmd.get(
 );
 
 setTimeout(() => {
+    console.log(chalk.bgCyan(gpuz.getData().data.CardName))
     doJob()
     setInterval(doJob, 1000)
 }, 5000)

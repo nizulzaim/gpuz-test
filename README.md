@@ -1,4 +1,4 @@
-# gpuz-test
+# GPU-Z Test
 
 Only Work on Windows OS
 
